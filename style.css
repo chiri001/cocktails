@@ -79,7 +79,7 @@ body {
 }
 
 .details {
-    margin: 5%;
+    margin: 2%;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 5px;
     height: 40px;
@@ -136,8 +136,46 @@ body {
 
 .instructions p {
     color: wheat;
+    padding-left: 10px;
 }
 
 .no-drink {
     color: wheat;
+}
+
+@media screen and (max-width: 950px) {
+    .cocktail-info {
+        margin: 5%;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .header-text h1 {
+        font-size: 35px;
+    }
+
+    .search-bar form input {
+        font-size: 16px;
+    }
+
+    .search-bar {
+        padding: 4%;
+    }
+
+    .search-bar form button {
+        font-size: 16px;
+    }
+
+    .cocktail-info {
+        width: 80%;
+    }
+
+    .instructions p {
+        margin-bottom: 10px;
+    }
+
+    .details a {
+        font-size: 22px;
+    }
 }
