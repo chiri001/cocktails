@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth; /*for smooth movement of page*/
+}
+
+body {
+    background-color: black;
+    background-image: url(Images/home4.jpg); /*adds background image to page*/
+    width: 100%; /*cover entire page width*/
+    height: 100vh; /*adjust to visible height of the page*/
+    background-size: cover; /*to allow even scaling depending on page size*/
+    background-position: center; /*puts scale focus to center*/
+    background-repeat: no-repeat; /*display image only once*/
+    overflow-x: hidden;
+}
+
+.home-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3%;
+}
+
+.header-text {
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+}
+
+.header-text h1 {
+    color: rgb(232, 2, 2);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 2%;
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.search-bar form input {
+    padding: 10px 30px;
+    font-size: 24px;
+    color: black;
+    border-radius: 5px;
+}
+
+.search-bar form button {
+    padding: 10px 30px;
+    font-size: 24px;
+    border-radius: 5px;
+    color: rgb(1, 28, 1);
+    background-color: rgb(255, 2, 2);
+    cursor: pointer;
+}
+
+.search-bar form button:hover {
+    background-color: orangered;
+}
+
+.cocktail-info {
+    border: 2px solid orangered;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: auto;
+    width: 30%;
+    padding: 2%;
+    display: none;
+}
+
+.details {
+    margin: 5%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    height: 40px;
+}
+
+.details a {
+    color: rgb(233, 2, 2);
+    font-size: 24px;
+    padding: 20px;
+}
+
+.drinkDetails {
+    display: flex;
+    flex-direction: column;
+}
+
+.drinkName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.drinkName h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(233, 2, 2);
+}
+.drinkName img {
+    margin: 20px 0;
+    border-radius: 10px;
+    width: 40%;
+    height: 40%;
+}
+.ingredients,
+.instructions {
+    padding: 1%;
+}
+
+.cocktail-info .ingredients ul {
+    padding-left: 20px;
+}
+
+.cocktail-info .ingredients li {
+    color: wheat;
+}
+.ingredients h3,
+.instructions h3 {
+    font-size: 20px;
+    color: rgb(233, 2, 2);
+    border-bottom: 2px solid orangered;
+    margin: 10px;
+}
+
+.instructions p {
+    color: wheat;
+}
+
+.no-drink {
+    color: wheat;
+}
