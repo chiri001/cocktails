@@ -30,7 +30,7 @@ $(document).ready(function () {
                     console.log('Error!! No drinks found of the search name');
                     $('.cocktail-info')
                         .html(
-                            '<p class="no-drink">No Drinks Found, Please try a different name</p>'
+                            '<p class="no-drink">No cocktail Found, Please try a different name</p>'
                         )
                         .show();
                     return; //exit
